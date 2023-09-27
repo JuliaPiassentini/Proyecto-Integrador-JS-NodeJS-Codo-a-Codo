@@ -370,6 +370,153 @@ header {
     font-weight: 700;
 }
 
+/* Aside Main */
+
+.contenedor{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+aside{
+    flex:25%;
+}
+
+main{
+    flex:75%;
+}
+
+/* Aside */
+
+.sidebar{
+    margin: var(--spacing-68) auto;
+    padding: var(--spacing-20);
+
+}
+
+
+.sidebar__buscar{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-medium);
+    padding: var(--spacing-8);
+}
+
+.sidebar__ordenar{
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-medium);
+    padding: var(--spacing-8);
+}
+.sidebar__precio {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding: var(--spacing-8);
+    font-size: var(--font-xsmall);
+
+}
+
+.sidebar__filtrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: var(--font-xsmall);
+    padding: var(--spacing-16);
+
+}
+
+.sidebar__buscar__place {
+    border-radius: 6px;
+    margin-top: var(--spacing-8) ;
+    height:var(--spacing-24) ;
+
+}
+
+.sidebar__ordenar__place {
+    border-radius: 6px;
+    margin-top: var(--spacing-8) ;
+    height:var(--spacing-24) ;
+}
+
+p {
+    margin-left: var(--spacing-8);
+}
+
+.sidebar__precio__place {
+    width: var(--spacing-36);
+    height:var(--spacing-24);
+    border-radius: 6px;
+    text-align:center;
+}
+
+/*MEDIA QUERY DISPOSITIVOS PEQUENOS*/
+@media(max-width:915px){
+
+    .sidebar {
+        margin-top: 0;
+    }
+
+    main {
+        margin-top: 0;
+    }
+    .sidebar__filtrar__lista {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        gap: var(--spacing-16);
+        font-size: var(--font-xsmall);
+    
+    }
+
+    .sidebar__precio {
+        justify-content: left;
+        gap: var(--spacing-16);
+    }
+
+    .sidebar__buscar__place {
+        width: 30%;
+    }
+    .sidebar__ordenar__place {
+        width: 30%;
+    }
+}
+
+
+/* Paginación */
+.paginacion {
+    margin-bottom: var(--spacing-28);
+}
+
+.paginacion__lista {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    width: 33%;
+    height: var(--spacing-36);
+    margin: auto;
+    
+    
+
+    
+}
+
+.paginacion__lista__boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--spacing-28);
+    height: var(--spacing-28);
+    font-size: var(--font-xsmall);
+    font-weight: var(--spacing-8);
+    border: solid 1px;
+    border-radius: 6px;
+    
+}
+
+
 /*FOOTER*/
 .footer {
     background-color: var(--dark-bg-solid);
