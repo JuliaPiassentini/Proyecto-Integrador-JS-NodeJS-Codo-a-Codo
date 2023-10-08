@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Funkoshop</title>
+    <link rel="stylesheet" href="../../css/index.css" />
+  </head>
+  <body>
+    <header>
+      <!--   Inicio Header   -->
+      <nav class="navbar container">
+        <picture class="navbar__logo">
+          <a href="../../index.html">
+            <img
+              src="../../img/branding/logo_light_horizontal.svg"
+              alt="Isologotipo de la Marca Funkoshop"
+            />
+          </a>
+        </picture>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a class="navbar__link" href="../shop/shop.html">VER TIENDA</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="admin.html">ADMIN</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../admin/login.html">SALIR</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container">
+      <div class="table__search">
+        <img src="../../img/icons/search_icon.svg" alt="icono de lupa" />
+        <input type="search" placeholder="código,nombre o categoría" />
+      </div>
+
+      <div class="table__title">
+        <h1 class="table__title--list">LISTADO DE PRODUCTOS</h1>
+        <div class="table__title--agregar">
+          <p>AGREGAR</p>
+          <a class="" href="../admin/create.html">
+            <img src="../../img/icons/mdi_plus-box.svg" alt="icono de plus" />
+          </a>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Código</th>
+            <th>Nombre del producto</th>
+            <th>Categoría</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-title="ID">1</td>
+            <td data-title="Código">STW001001</td>
+            <td data-title="Nombre del producto">Baby Yoda Blueball</td>
+            <td data-title="Categoría">STAR WARS</td>
+            <td>
+              <div class="table__icons">
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/edit_pencil.svg"
+                    alt="icono de lapiz"
+                  />
+                </a>
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/delete_trash.svg"
+                    alt="icono de tacho basura"
+                  />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="ID">2</td>
+            <td data-title="Código">STW001002</td>
+            <td data-title="Nombre del producto">Boba Fett Fighter</td>
+            <td data-title="Categoría">STAR WARS</td>
+            <td>
+              <div class="table__icons">
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/edit_pencil.svg"
+                    alt="icono de lapiz"
+                  />
+                </a>
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/delete_trash.svg"
+                    alt="icono de tacho basura"
+                  />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="ID">3</td>
+            <td data-title="Código">STW001003</td>
+            <td data-title="Nombre del producto">Luke Skylwalker & Grogu</td>
+            <td data-title="Categoría">STAR WARS</td>
+            <td>
+              <div class="table__icons">
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/edit_pencil.svg"
+                    alt="icono de lapiz"
+                  />
+                </a>
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/delete_trash.svg"
+                    alt="icono de tacho basura"
+                  />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="ID">4</td>
+            <td data-title="Código">STW001004</td>
+            <td data-title="Nombre del producto">Stormtrooper Lightsaber</td>
+            <td data-title="Categoría">STAR WARS</td>
+            <td>
+              <div class="table__icons">
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/edit_pencil.svg"
+                    alt="icono de lapiz"
+                  />
+                </a>
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/delete_trash.svg"
+                    alt="icono de tacho basura"
+                  />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="ID">5</td>
+            <td data-title="Código">PKM001001</td>
+            <td data-title="Nombre del producto">Charmander Smiley</td>
+            <td data-title="Categoría">POKEMON</td>
+            <td>
+              <div class="table__icons">
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/edit_pencil.svg"
+                    alt="icono de lapiz"
+                  />
+                </a>
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/delete_trash.svg"
+                    alt="icono de tacho basura"
+                  />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="ID">6</td>
+            <td data-title="Código">PKM001002</td>
+            <td data-title="Nombre del producto">Dragonite Hi!</td>
+            <td data-title="Categoría">POKEMON</td>
+            <td>
+              <div class="table__icons">
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/edit_pencil.svg"
+                    alt="icono de lapiz"
+                  />
+                </a>
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/delete_trash.svg"
+                    alt="icono de tacho basura"
+                  />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="ID">7</td>
+            <td data-title="Código">PKM001003</td>
+            <td data-title="Nombre del producto">Pidgeotto Flying</td>
+            <td data-title="Categoría">POKEMON</td>
+            <td>
+              <div class="table__icons">
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/edit_pencil.svg"
+                    alt="icono de lapiz"
+                  />
+                </a>
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/delete_trash.svg"
+                    alt="icono de tacho basura"
+                  />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="ID">8</td>
+            <td data-title="Código">PKM001004</td>
+            <td data-title="Nombre del producto">Pikachu Smiley</td>
+            <td data-title="Categoría">POKEMON</td>
+            <td>
+              <div class="table__icons">
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/edit_pencil.svg"
+                    alt="icono de lapiz"
+                  />
+                </a>
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/delete_trash.svg"
+                    alt="icono de tacho basura"
+                  />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="ID">9</td>
+            <td data-title="Código">PKM001005</td>
+            <td data-title="Nombre del producto">Vulpix Fancy</td>
+            <td data-title="Categoría">POKEMON</td>
+            <td>
+              <div class="table__icons">
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/edit_pencil.svg"
+                    alt="icono de lapiz"
+                  />
+                </a>
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/delete_trash.svg"
+                    alt="icono de tacho basura"
+                  />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="ID">10</td>
+            <td data-title="Código">HPT001001</td>
+            <td data-title="Nombre del producto">Harry Potter & Hegwid</td>
+            <td data-title="Categoría">HARRY POTTER</td>
+            <td>
+              <div class="table__icons">
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/edit_pencil.svg"
+                    alt="icono de lapiz"
+                  />
+                </a>
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/delete_trash.svg"
+                    alt="icono de tacho basura"
+                  />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="ID">11</td>
+            <td data-title="Código">HPT001002</td>
+            <td data-title="Nombre del producto">Herminione Ball Dress</td>
+            <td data-title="Categoría">HARRY POTTER</td>
+            <td>
+              <div class="table__icons">
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/edit_pencil.svg"
+                    alt="icono de lapiz"
+                  />
+                </a>
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/delete_trash.svg"
+                    alt="icono de tacho basura"
+                  />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="ID">12</td>
+            <td data-title="Código">HPT001003</td>
+            <td data-title="Nombre del producto">Luna Lovegood Lion Mask</td>
+            <td data-title="Categoría">HARRY POTTER</td>
+            <td>
+              <div class="table__icons">
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/edit_pencil.svg"
+                    alt="icono de lapiz"
+                  />
+                </a>
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/delete_trash.svg"
+                    alt="icono de tacho basura"
+                  />
+                </a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td data-title="ID">13</td>
+            <td data-title="Código">HPT001004</td>
+            <td data-title="Nombre del producto">Snape Patronus</td>
+            <td data-title="Categoría">HARRY POTTER</td>
+            <td>
+              <div class="table__icons">
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/edit_pencil.svg"
+                    alt="icono de lapiz"
+                  />
+                </a>
+                <a class="table__icon" href="../admin/edit.html">
+                  <img
+                    src="../../img/icons/delete_trash.svg"
+                    alt="icono de tacho basura"
+                  />
+                </a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer class="footer">
+      <nav class="navbar container">
+        <ul class="navbar__item">
+          <li class="navbar__item">
+            <a class="navbar__link" href="../shop/shop.html">SHOP</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../shop/shop.html">REGISTRARSE</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./login.html">INGRESAR</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="./../contact.html">CONTACTO</a>
+          </li>
+        </ul>
+        <picture>
+          <img
+            src="../../img/branding/isotype.svg"
+            alt="Isotipo de la marca Funkoshop"
+          />
+        </picture>
+      </nav>
+
+      <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  </body>
+</html>
