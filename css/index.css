@@ -518,7 +518,6 @@ p {
 
 /* PAGINA ITEM */
 .item__container {
-    background-color:#1D84B5;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -527,13 +526,11 @@ p {
 }
 
 .item__info {
-    background-color:burlywood;
     display: flex;
     flex-direction: column;
 }
 
 .item__licence {
-    background-color: #FF3333;
     font-family: var(--base-font);
     font-size: var(--font-small);
     font-weight: 300;
@@ -541,21 +538,18 @@ p {
 }
 
 .item__name {
-    background-color: blueviolet;
     font-family: var(--base-font);
     font-size: var(--font-display);
     font-weight: 700;
 }
 
 .item__description{
-    background-color: darkgoldenrod;
     font-family: var(--alternative-font);
     font-size: var(--font-large);
     font-weight: 300;
     margin-left: 0;
 }
 .item__price {
-    background-color: coral;
     font-size: var(--font-display);
     font-weight: 300;
     margin-left: 0;
@@ -563,10 +557,10 @@ p {
 
 .item__cart {
     display: grid;
-    grid-template-columns: 50% 10% 10% 80%;
+    grid-template-columns: 45% 5% 5% 45%;
     grid-template-rows: auto auto;
-    background-color: chartreuse;
     gap: 0.5rem;
+    width: 60%;
 }
 .item__input {
     grid-column: 1/2;
@@ -597,7 +591,6 @@ p {
 }
 
 .item__promo {
-    background-color: aqua;
     color: var(--secondary-solid);
     padding: var(--spacing-8);
     font-size: var(--font-xsmall);
@@ -605,7 +598,7 @@ p {
 }
 
 /*MEDIA QUERY DISPOSITIVOS PEQUENOS ITEM*/
-@media(max-width:915px)
+@media(max-width:1061px) {
 
 .item__licence {
     font-size: var(--font-xsmall);
@@ -627,6 +620,12 @@ p {
     width: 40%;
     gap: 0.3rem;
 }
+
+.slider__title {
+    font-size: var(--font-large);
+}
+}
+
 
 
 
