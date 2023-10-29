@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+:root {
+    /*Paleta de colores,variables para reutilizar valores y no repetir,modifico valores desde aquí y lo hará en los selectores atribuidos con dichas variables*/
+    --primary-solid: #FF3333;
+    --primary-900: #ff3333e6;
+    /*Indico el mismo color con  90%de trnsparencia */
+    --primary-500: rgba(255, 51, 51, 0.5);
+    /*50%transparencia*/
+    --primary-300: rgba(255, 51, 51, 0.3);
+
+    --secondary-solid: #1D84B5;
+    --secondary-900: rgba(29, 132, 181, 0.9);
+    --secondary-500: rgba(29, 132, 181, 0.5);
+    --secondary-300: rgba(29, 132, 181, 0.3);
+
+    --dark-solid: #1F1F1F;
+    --dark-900: rgb(31, 31, 31, 0.9);
+    --dark-500: rgb(31, 31, 31, 0.5);
+    --dark-300: rgb(31, 31, 31, 0.3);
+
+    --dark-bg-solid: #30343F;
+    /*Utilizado en background oscuros*/
+    --light-bg-solid: #FAFAFF;
+    /*Utilizaos en backgrounds*/
+    --light-font-solid: #FFFFFF;
+
+    /*Tipography*/
+    --base-font: 'Inter', Sans-serif;
+    --alternative-font: 'Raleway', sans-serif;
+
+    /*Font-size*/
+    --font-display: 4.6em;
+    /*Ya que jaqueamos el valor de 1em a 10px y no el determonado que es 16px*/
+    --font-jumbo: 3.8em;
+    --font-xlarge: 3em;
+    --font-large: 2.4em;
+    --font-medium: 1.8em;
+    --font-small: 1.6em;
+    --font-xsmall: 1.4em;
+
+    /*Spacings*/
+    --spacing-128: 12.8rem;
+    --spacing-68: 6.8rem;
+    --spacing-36: 3.6rem;
+    --spacing-28: 2.8rem;
+    --spacing-24: 2.4rem;
+    --spacing-20: 2rem;
+    --spacing-16: 1.6rem;
+    --spacing-12: 1.2rem;
+    --spacing-8: 0.8rem;
+
+}
+
+*,
+* ::before,
+/*Agregamos estas pseudoclases xq si las llegamos a utilizar tambien queremos normalizar esos estilos*/
+* ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Al contrario de content-box si le aplico margen o pading extra el contenido se achica y aapta hacia dentro y no aumenta el tamaño de la cajita*/
+}
+
+html {
+    font-family: var(--base-font);
+    /*html le hereda esta familia tipografica a todos klos elementos del sitio excepto  a footer y header q tienen la propia*/
+    font-size: 62.5%;
+    /*62.5=10px=1em Normalizamos a 10px el estandar del navegador,Con esto le decimos al navegador que en lugar del estandar sea 16px quede en 10px pero en porcentaje para no complicar, 16px =1em buena practica usar em para textos y rem*/
+    color: var(--dark-solid);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    /*Le indicamos con esto que tome el color que viene heredado de la etiqueta html y no del azul que que le establece el navegador*/
+    font-family: inherit;
+    /*Para que los enlces que estan dentro de un header o footer tengan fuente Raleway y los que estan fuera tengan fuente Inter, los enlaces heredan de sus etiquetas padres el tipo de fuente*/
+}
+
+header,
+footer {
+    font-family: var(--alternative-font);
+    color: var(--light-font-solid);
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+p {
+    font-size: 1.8em;
+    /*1.8em=18px*/
+}
+
+img {
+    width: 100%;
+    /*asi Siempre tendra el 100%del ancho de su contenedor padre que es picture*/
+}
+
+.container {
+    /*Esto hará que el contenido quede centrado y con un ancho fijo y los elementos en una misma linea vertical*/
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+/*HEADER*/
+
+header {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo {
+    max-width: 300px;
+
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+
+}
+
+.navbar__link {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+    /*Padre del submenú al cual le asignamos position absolute*/
+}
+
+.navbar__link:hover {
+    background-color: var(--primary-900);
+
+}
+
+
+
+
+
+
+.footer {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-68);
+}
+
+.footer__copy {
+    margin-top: var(--spacing-36);
+    text-align: center;
+}
+
+
