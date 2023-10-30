@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="../../css/register.css">
 
 </head>
+
 <body>
     <header>
         <!--   Inicio Header   -->
@@ -29,6 +31,41 @@
         </nav>
     </header>
 
+    <!--REGISTRO-->
+    <main class="main-container">
+        <section class="registro container">
+            <h1 class="registro__titulo">Crea tu cuenta</h1>
+            <p class="registro__subtitulo">Completa el formulario para ser parte del mundo de los Funkos</p>
+            <form class="form">
+                <article class="form__columnaizq">
+                    <label for="name">Nombre:</label><br><br>
+                    <label for="lastname">Apellido:</label><br><br>
+                    <label for="email">Email:</label><br><br>
+                    <label for="password">Contraseña:</label><br><br>
+                    <label for="password">Repita contraseña:</label><br><br>
+                </article>
+
+                <article class="form__columnader">
+                    <input type="text" name="name" id="name" placeholder="John"><br><br>
+                    <input type="text" name="lastname" id="lastname" placeholder="Doe"><br><br>
+                    <input type="email" name="email" id="email" placeholder="johndoe@correo.com"><br><br>
+                    <input type="password" name="password" id="password" placeholder="••••••••"><br><br>
+                    <input type="password" name="password" id="password" placeholder="••••••••"><br><br>
+                </article>
+            </form>
+            <article class="registro__terminosycondiciones">
+                <input class="btn__registrar" type="submit" value="Registrar">
+                <input class="btn__checkbox" type="checkbox" id="condiciones" name="condiciones" /> <span
+                    class="text__acepto">Acepto</span>
+                <a class="link__terminosycondiciones" href="terminos.html" target="_blank"><span
+                        class="text__terminosycondiones">Términos y
+                        Condiciones</span> </a>
+
+            </article>
+
+        </section>
+    </main>
+
 
 
     <!--Footer-->
@@ -48,6 +85,14 @@
                     <a class="navbar__link" href="#">CONTACTO</a>
                 </li>
             </ul>
+            <picture>
+                <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop" />
+            </picture>
+        </nav>
+
+        <p class="footer__copy">All rights reserved 2022 - Funkoshop &copy copy;</p>
+
 
 </body>
+
 </html>

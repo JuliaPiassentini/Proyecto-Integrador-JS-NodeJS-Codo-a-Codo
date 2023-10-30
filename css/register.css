@@ -144,19 +144,115 @@ header {
 
 }
 
+/*Registro*/
+.registro__titulo {
+    font-size: var(--font-display);
+    font-family: var(--alternative-font);
+    font-weight: 700;
+    padding: var(--spacing-16);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.registro__subtitulo {
+    font-size: var(--font-jumbo);
+    font-family: var(--alternative-font);
+    font-weight: 500;
+    padding: var(--spacing-12);
+    text-align: center;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: var(--spacing-28);
+}
+
+label{
+    color: var(--dark-solid);
+    font-size: var(--font-large);
+    font-family: var(--base-font);
+    font-weight: 400;
+    letter-spacing: 0.96px;
+    margin: 5px; 
+}
+
+.form__columnaizq{
+    padding-left: 55%;
+}
+
+input {
+    color: var(--light-bg-solid);
+    font-size: var(--font-small);
+    font-family: var(--base-font);
+    font-weight: 400;
+    letter-spacing: 0.64px;
+    border: 0;
+    border-bottom: 2px solid var(--primary-solid);
+    margin: 5px;   
+}
+
+.btn__registrar {
+    color: white;
+    font-size: var(--font-xsmall);
+    font-family: var(--base-font);
+    font-weight: 400;
+    text-align: center;
+    background: #FF3333;
+    width: 103px;
+    height: 39.06px;
+    margin-right: 25px;
+    
+}
 
 
+.btn__checkbox {
+    color: #1F1F1F !important;
+    font-size: var(--font-medium) !important;
+    font-family: var(--base-font) !important;
+    font-weight: 400 !important;
+   
+}
 
+.link__terminosycondiciones {
+    color: #1D84B5;
+    font-size: var(--font-medium);
+    font-family: var(--base-font);
+    font-weight: 400;
+    
+}
+
+.text__acepto{
+    color: #1F1F1F !important; 
+    font-size: 18px !important; 
+    font-family: Inter !important; 
+    font-weight: 400 !important; 
+    word-wrap: break-word !important;
+}
+
+.text__terminosycondiones{
+   color:#1D84B5; 
+   font-size: 18px; 
+   font-family: Inter; 
+   font-weight: 400; 
+   word-wrap: break-word;
+}
+
+.registro__terminosycondiciones {
+    text-align: center;
+    margin-bottom:var(--spacing-12);
+}
 
 
 .footer {
     background-color: var(--dark-bg-solid);
-    padding: var(--spacing-68);
+    padding: var(--spacing-36);
 }
 
 .footer__copy {
-    margin-top: var(--spacing-36);
     text-align: center;
+    margin-top: var(--spacing-68);
 }
 
 
