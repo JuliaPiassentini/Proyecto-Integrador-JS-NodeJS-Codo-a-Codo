@@ -110,6 +110,7 @@ img {
 header {
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-36);
+    margin-bottom: var(--spacing-68);
 }
 
 .navbar {
@@ -186,7 +187,7 @@ header {
     position: relative;
 }
 
-/*Main*/
+/*Main-Detalle de los productos del carrito*/
 .carrito__title {
     font-family: var(--alternative-font);
     font-weight: 700;
@@ -371,6 +372,116 @@ header {
     display: inline-flex;
 }
 
+
+/*Resumen de productos del carrito*/
+
+.resumen {
+    font-family: var(--alternative-font);
+    font-weight: 700;
+    font-size: var(--font-display);
+    text-transform: uppercase;
+    text-decoration: underline 5px var(--primary-solid);
+    padding: var(--spacing-20);
+    position: relative;
+    left: 80%;
+}
+
+.resumen__content {
+    position: relative;
+    left: 50%;
+    margin-bottom: 50px;
+}
+
+.contenedor_tarjeta{
+    width: 50%; 
+    height: 100%; 
+    padding: 24px; 
+    background: #FAFAFF; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); 
+    border-radius: 10px; 
+    overflow: hidden; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 20px; 
+    display: inline-flex;
+}
+
+.contenedor_datos{
+    width: 524px; 
+    justify-content: space-between; 
+    align-items: center; 
+    display: inline-flex;  
+}
+
+.cantidad_elementos_text{
+    color: black; 
+    font-size: 16px; 
+    font-family: Inter; 
+    font-weight: 600; 
+    word-wrap: break-word;
+}
+
+.dato{
+    color: #747474; 
+    font-size: 16px; 
+    font-family: Inter; 
+    font-weight: 700; 
+    word-wrap: break-word;
+}
+
+.subtotal_text{
+    color: black; 
+    font-size: 16px; 
+    font-family: Inter; 
+    font-weight: 600; 
+    word-wrap: break-word;
+}
+
+.envio_text{
+    color: black; 
+    font-size: 16px; 
+    font-family: Inter; 
+    font-weight: 600; 
+    word-wrap: break-word;
+}
+
+.contenedor_datos_total{
+    width: 524px; 
+    padding-top: 8px; 
+    border-top: 2px #FF3333 solid; 
+    justify-content: space-between; 
+    align-items: center; 
+    display: inline-flex;
+}
+
+.total_text{
+    color: black; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 700; 
+    word-wrap: break-word;
+}
+
+.dato_total{
+    color: #747474; 
+    font-size: 20px; 
+    font-family: Inter; 
+    font-weight: 700; 
+    word-wrap: break-word;
+}
+
+.btn_pagar {
+   
+    font-size:var(--font-xlarge);
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-16) 21.3rem;
+    font-weight: 700;
+    position: relative;
+    left: 50%;
+    margin-bottom: var(--spacing-128);
+    }
 
 
 
