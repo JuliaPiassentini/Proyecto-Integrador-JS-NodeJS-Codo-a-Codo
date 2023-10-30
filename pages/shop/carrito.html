@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Carrito FunkoShop</title>
+    <link rel="stylesheet" href="../../css/carrito.css">
+</head>
+<body>
+    <header>
+        <!--   Inicio Header   -->
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <!--Etiqueta que le da más semantica al archivo no es estrictamente necesaria-->
+                <a href="../index.html">
+                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop" />
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a class="navbar__link with-icon" href="../pages/shop.html">SHOP <iconify-icon
+                            icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/contacto.html">CONTACTO</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__cart" href="../pages/cart.html">
+                        <picture class="navbar__cart_cover">
+                            <span class="navbar__cart_tag">
+                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Group 108">
+                                        <circle id="Ellipse 1" cx="9.85327" cy="9.93762" r="9" fill="#FF3333" />
+                                        <path id="3"
+                                            d="M9.86191 14.4206C9.29941 14.4206 8.79798 14.324 8.35764 14.1308C7.92014 13.9377 7.57213 13.6692 7.31361 13.3255C7.05793 12.9789 6.91872 12.5769 6.896 12.1195H7.96986C7.99259 12.4007 8.08918 12.6436 8.25963 12.8482C8.43009 13.0499 8.6531 13.2061 8.92867 13.3169C9.20423 13.4277 9.50963 13.4831 9.84486 13.4831C10.2199 13.4831 10.5522 13.4178 10.842 13.2871C11.1318 13.1564 11.3591 12.9746 11.5238 12.7416C11.6886 12.5087 11.771 12.2388 11.771 11.932C11.771 11.611 11.6915 11.3283 11.5324 11.084C11.3733 10.8368 11.1403 10.6436 10.8335 10.5044C10.5267 10.3652 10.1517 10.2956 9.7085 10.2956H9.00963V9.35812H9.7085C10.0551 9.35812 10.3591 9.29562 10.6204 9.17062C10.8846 9.04562 11.0906 8.86948 11.2383 8.64221C11.3889 8.41494 11.4642 8.14789 11.4642 7.84108C11.4642 7.54562 11.3988 7.28852 11.2682 7.06977C11.1375 6.85102 10.9528 6.68056 10.7142 6.55841C10.4784 6.43625 10.2 6.37517 9.87895 6.37517C9.57781 6.37517 9.29372 6.43056 9.02668 6.54136C8.76247 6.64931 8.54656 6.80698 8.37895 7.01437C8.21134 7.21892 8.12043 7.46608 8.10622 7.75585H7.0835C7.10054 7.29846 7.23833 6.89789 7.49685 6.55414C7.75537 6.20755 8.09344 5.93767 8.51105 5.74448C8.93151 5.5513 9.39316 5.45471 9.896 5.45471C10.4358 5.45471 10.8988 5.56409 11.2852 5.78284C11.6716 5.99875 11.9684 6.28426 12.1758 6.63937C12.3832 6.99448 12.4869 7.37801 12.4869 7.78994C12.4869 8.28142 12.3576 8.70045 12.0991 9.04704C11.8434 9.39363 11.4954 9.63369 11.0551 9.76721V9.83539C11.6062 9.9263 12.0366 10.1607 12.3463 10.5385C12.6559 10.9135 12.8108 11.378 12.8108 11.932C12.8108 12.4064 12.6815 12.8326 12.423 13.2104C12.1673 13.5854 11.8179 13.8808 11.3747 14.0968C10.9315 14.3127 10.4272 14.4206 9.86191 14.4206Z"
+                                            fill="white" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <img src="../../img/icons/cart-icon.svg" alt="icono de carrito" />
+                        </picture>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar__item">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/login.html">INGRESAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="../pages/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop" />
+            </picture>
+        </nav>
+
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+
+
+</body>
+</html>
