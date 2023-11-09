@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="../../css/admin.css">
+</head>
+<body>
+    <header>
+        <!--   Inicio Header   -->
+        <nav class="navbar container">
+          <picture class="navbar__logo"
+            ><!--Etiqueta que le da más semantica al archivo no es estrictamente necesaria-->
+            <a href="./index.html">
+              <img
+                src="../../img/branding/logo_light_horizontal.svg"
+                alt="Isologotipo de la Marca Funkoshop"
+              />
+            </a>
+          </picture>
+          <ul class="navbar__menu">
+            <li class="navbar__item with-submenu">
+              <a class="navbar__link with-icon" href="./pages/shop.html"
+                >SHOP <iconify-icon icon="tabler:chevron-down"></iconify-icon
+              ></a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a href="" class="submenu__link">Funkos</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="" class="submenu__link">Remeras</a>
+                </li>
+                <li class="submenu__item">
+                  <a href="" class="submenu__link">Llaveros</a>
+                </li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="./pages/contacto.html">CONTACTO</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="./pages/login.html">LOGIN</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__cart" href="./pages/cart.html">
+                <img src="../../img/icons/cart-icon.svg" alt="icono de carrito" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!--   Fin Header   -->
+
+      <section class="create">
+        <h1>EDITAR ITEM</h1>
+        <>
+          <H4>Categoria:</H4><div class="form-group">
+            <label for=""></label>
+            <select class="form-control" name="Categoria" id="">
+              <option>1</option>
+              <option>2 </option>
+              <option>3</option>
+            </select>
+          </div>
+          <H4>Licencia:</H4><div class="form-group">
+            <label for=""></label>
+            <select class="form-control" name="Licencia" id="">
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+          </div>
+          <H4>Nombre del producto:<input type="text"></H4>
+          <br>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <H4>SKU:<input type="text"></H4>
+          <H4>Precio:<input type="text"></H4>
+          <H4>Stock:<input type="text"></H4>
+          <H4>Descuento:<input type="text"></H4>
+          <H4>Cuotas:</H4><div class="form-group">
+            <label for=""></label>
+            <select class="form-control" name="Cuotas" id="">
+              <option>3 Cuotas sin interes</option>
+              <option>6 Cuotas sin interes</option>
+              <option>9 Cuotas sin interes</option>
+            </select>
+          </div>
+          
+          <H4>Imagenes:</H4>
+          <a class="boton_crear" href="/">Elegir Imagen</a>
+          <p>no se ha seleccionado ningun archivo</p>        
+          <picture class="collection__cover"
+          ><!--Sentido semántico-->
+          <img
+            src="./"
+            alt="Figura coleccionable frente"
+          />
+          <img
+            src="./"
+            alt="Figura coleccionable dorso"
+          />
+        </picture>
+
+
+        </div>
+        <a class="boton_crear" href="/">Modificar Producto</a>
+        
+
+
+
+
+
+      </section>
+
+
+
+      <footer class="footer">
+        <nav class="navbar container">
+          <ul class="navbar__item">
+            <li class="navbar__item">
+              <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="./pages/login.html">INGRESAR</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+            </li>
+          </ul>
+          <picture>
+            <img
+              src="../../img/branding/isotype.svg"
+              alt="Isotipo de la marca Funkoshop"
+            />
+          </picture>
+        </nav>
+  
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+      </footer>
+    
+</body>
+</html>
